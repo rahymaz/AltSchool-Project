@@ -186,7 +186,7 @@ tbody, tr {
 
 
 .myPhoto {
-    width: 50%;
+    width: 100%;
     padding: 1rem;
     
 }
@@ -211,6 +211,13 @@ iframe {
     border-radius: 0.5rem;
 }
 
+.medium {
+    display: none;
+}
+
+.small {
+    display: none;
+}
 
 
 
@@ -220,7 +227,7 @@ iframe {
 
 
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 480px) and (max-width:767px) {
     .ray {
         display: flex;
         flex-direction: column-reverse;
@@ -266,10 +273,22 @@ iframe {
 iframe {
     margin: 1rem 10%;
 }
+
+.small {
+    display: block;
+}
+
+.large {
+    display: none;
+}
+
+.medium {
+    display: none;
+}
 }
 
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
     
 .ray {
     display: flex;
@@ -280,15 +299,16 @@ iframe {
 
 
 .writeUp {
-    width: 70%;
-    padding: 2rem;
+    width: 50%;
+    padding: 0.5rem;
     line-height: 24px;
+    font-size: 1rem;
 }
 
 
 
 .myPhoto {
-    width: 50%;
+    width: 65%;
     padding: 2rem;
 }
 
@@ -311,6 +331,16 @@ iframe {
     height: 100px;
 }
 
+.large {
+    display: none;
+}
+.medium {
+    display: block;
+}
+
+.small {
+    display: none;
+}
 
 }
 
